@@ -1,8 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
-
+.blue-text{
+    color:rgb(51, 173, 255)!important;
+}
 .bg-unique{
     background-color: grey!important;
 }
@@ -13,9 +16,19 @@ nav li{
     font-weight: 400;
 }
 #navbar{
-    background-color: #131313!important;
+    background-color: #0e0e0e!important;
 }
-
+nav{
+    position: fixed!important;
+    width: 100%!important;
+    z-index: 100;
+    height: 6rem!important;
+}
+.navbar-brand img{
+    height: 3rem;
+    position: relative;
+    top: .7rem;
+}
 .navbar li a:hover{
     color:rgb(51, 173, 255)!important;
 }
@@ -33,20 +46,124 @@ nav li{
     z-index: -10;
   }
   .carousel{
-      margin-top: -1.55rem!important;
   }
   .section-1{
       height: 40rem;
-      background-color: #131313!important;
+      background-color: #0e0e0e!important;
 }
 .color-text{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 27rem;
+    margin-top: 26rem;
+    text-shadow: .6rem .6rem 1rem black;
+
 }
 .landing-title, .landing-sub{
     color:white
+}
+.landing-title{
+    font-size: 3.2rem!important;
+}
+.landing-sub{
+    font-size: 2.2rem!important;
+}
+/*Section 1*/
+.section-title {
+    color:white;
+    top: 2rem;
+    position: relative;
+    font-size: 2rem;
+}
+.video{
+    position: relative;
+}
+.info-row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+.info-text{
+    color:white;
+    width: 40%;
+    margin-left: 3rem;
+}
+/*Section-2*/
+.section-2{
+    height: 30rem;
+}
+.section-2 {
+	background: linear-gradient(-45deg,#184d92, #2594fc);
+	background-size: 100% 100%;
+}
+
+.grad-title{
+    color:white;
+    font-size: 2rem;
+    position: relative;
+    top: 3rem;
+}
+.icon-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+/*Section-3*/
+.section-3{
+    height: 45rem;
+    background-color: #0e0e0e!important;
+}
+.price-title{
+    color:white;
+    font-size: 2rem;
+    position: relative;
+    top: 3rem;
+}
+.price-info{
+    width: 60%;
+}
+.center-text{
+    display: flex;
+    justify-content: center;
+    color:white;
+    margin-top: 4rem;
+}
+.center-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.card{
+    background-color: #181818!important;
+    width: 20rem;
+    height: 23rem;
+    margin-left: 4rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+.card-title{
+    color:white;
+}
+.card-info{
+    color:rgb(158, 158, 158);
+}
+.card-btn{
+    background: transparent!important;
+    border: rgb(51, 173, 255) 1px solid;
+    height: 2.5rem;
+    color:rgb(51, 173, 255);
+    margin-top: 3rem;
+    transition: 200ms ease all;
+}
+.card-btn:hover{
+    background: rgb(51, 173, 255)!important;
+ color:white;
 }
 /* Footer Section*/
 .lower-footer{
@@ -56,7 +173,7 @@ nav li{
     position: relative;
   }
   .footer-distributed {
-    background-color: #181818;
+    background-color: #131313;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -153,3 +270,114 @@ nav li{
     }
   }
   
+  /************BLOG HTML**********/
+  .landing-scroll{
+    background: url(img/csgo.jpg);
+    height: 220vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+  }
+
+  .info-container{
+      background: rgba(17, 17, 17, 0.85);
+      height: 170vh;
+      width: 60%;
+      top: 15rem;
+      position: relative;
+  }
+  .center-container{
+      display:flex;
+      justify-content: center;
+  }
+  .blog-title{
+      color:white;
+      padding-top: 3rem;
+  }
+  .item{
+      text-align: left;
+      padding-left: 7rem;
+      padding-top: 3rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  
+  ul > li:before {
+    content: "–"; 
+    position: absolute;
+    margin-left: -1.1em; 
+  }
+  .item-underline{
+      width: 90%;
+      height: .1rem;
+      background: rgb(49, 49, 49);
+  }
+  .item-blog-title{
+      color:rgb(218, 218, 218);
+  }
+  .item-blog-date{
+    color:rgb(170, 170, 170);
+  }
+  .list-item{
+      color:rgb(170, 170, 170);
+  }
+  .item-list{
+      padding-bottom: 3rem;
+  }
+
+    /************DOWNLOAD HTML**********/
+
+    .download-landing{
+        background: url(img/csgo.jpg);
+        height: 105vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        }
+    .download-container{
+        height: 80vh;
+        width: 80%;
+        background:rgb(15, 15, 15);
+        margin-top: 10rem;
+    }
+    .download-title{
+        color:white;
+        margin-top: 7rem;
+    }
+    .warning{
+        color:grey;
+        width: 60%
+    }
+    .warning-center{
+        display: flex;
+        justify-content: center;
+    }
+    .download-col{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .download-btn{
+        position: relative;
+        top: 5rem;
+        left: -21rem;
+        background: transparent!important;
+        border: rgb(51, 173, 255) 1px solid;
+        height: 2.5rem;
+        color:rgb(51, 173, 255);
+        margin-top: 3rem;
+        transition: 200ms ease all;
+        width: 20rem;
+    }
+    .download-video{
+        position: relative;
+        left: 10rem;
+    }
+
+    .download-btn:hover{
+        background: rgb(51, 173, 255)!important;
+     color:white;
+    }
